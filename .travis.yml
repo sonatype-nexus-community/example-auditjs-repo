@@ -1,0 +1,11 @@
+dist: xenial
+language: node_js
+node_js:
+  - 8
+  - 10
+  - 12
+
+cache: npm
+
+after_install:
+  - npx auditjs@beta
