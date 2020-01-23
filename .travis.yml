@@ -8,4 +8,4 @@ node_js:
 cache: npm
 
 script:
-  - npx auditjs@beta
+  - npx auditjs@beta ossi
