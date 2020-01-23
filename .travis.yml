@@ -7,5 +7,5 @@ node_js:
 
 cache: npm
 
-after_install:
+script:
   - npx auditjs@beta
