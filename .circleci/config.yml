@@ -20,7 +20,9 @@ jobs:
             - ./node_modules
       - run:
           name: run auditjs
-          command: npx auditjs@beta ossi --xml > reports/dependency-results.xml
+          command: | 
+            mkdir reports
+            npx auditjs@beta ossi --xml > reports/dependency-results.xml
       - store_artifacts:
           path: reports
           prefix: dependencies
